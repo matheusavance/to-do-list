@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(14,101,163);
+  background: linear-gradient(90deg, rgba(14,101,163,1) 0%, rgba(9,165,169,1) 100%);
+  color: #fff;
+  font-family: Lato, sans-serif;
+  
+  section#modulo1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 70px;
+
+      .conteudo {
+          font-size: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h1 {
+              font-size: 65px;
+              margin-bottom: 50px;
+          }
+
+          form {
+              .todo-input, .todo-button {
+                  padding: 10px;
+                  font-size: 20px;
+                  border: none;
+                  background-color: white;
+                  outline: none;
+                  margin-bottom: 20px;
+              }
+
+              .todo-button {
+                  color: rgb(14,101,163);
+                  background-color: white;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                  &:hover {
+                      background-color: rgb(14,101,163);
+                      color: white;
+                  }
+              }
+
+          }
+
+          .todo-container {
+              .todo-list {
+                  min-width: 30%;
+                  list-style: none;
+
+                  .todo {
+                      margin-bottom: 20px;
+                      background: white;
+                      color: black;
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      transition: all 0.4s ease;
+
+                      .todo-item {
+                          margin: 0.5rem;
+                          font-size: 1.2rem;
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          padding: 0rem 0.5rem;
+                      }
+                  }
+
+                  .todo li {
+                      flex: 1;
+                  }
+
+                  .complete-btn, .trash-btn {
+                      background-color: #0e65a3;
+                      color: #fff;
+                      border: none;
+                      padding: 1rem;
+                      cursor: pointer;
+                  }
+
+                  .complete-btn {
+                      background-color: #81C14B;
+                  }
+
+                  .trash-btn {
+                      background-color: #A40E4C;
+                  }
+
+                  .fa-check, .fa-trash {
+                      pointer-events: none;
+                  }
+
+                  .completed {
+                      text-decoration: line-through;
+                      opacity: 0.5;
+                  }
+              }
+          }
+      }
+  }
+}

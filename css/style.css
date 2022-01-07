@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0e65a3;
+  background: -webkit-gradient(linear, left top, right top, from(#0e65a3), to(#09a5a9));
+  background: linear-gradient(90deg, #0e65a3 0%, #09a5a9 100%);
+  color: #fff;
+  font-family: Lato, sans-serif;
+}
+
+body section#modulo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+body section#modulo1 .conteudo {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section#modulo1 .conteudo h1 {
+  font-size: 65px;
+  margin-bottom: 50px;
+}
+
+body section#modulo1 .conteudo form .todo-input, body section#modulo1 .conteudo form .todo-button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+body section#modulo1 .conteudo form .todo-button {
+  color: #0e65a3;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body section#modulo1 .conteudo form .todo-button:hover {
+  background-color: #0e65a3;
+  color: white;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .todo {
+  margin-bottom: 20px;
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .todo .todo-item {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 0.5rem;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .complete-btn, body section#modulo1 .conteudo .todo-container .todo-list .trash-btn {
+  background-color: #0e65a3;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .complete-btn {
+  background-color: #81C14B;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .trash-btn {
+  background-color: #A40E4C;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .fa-check, body section#modulo1 .conteudo .todo-container .todo-list .fa-trash {
+  pointer-events: none;
+}
+
+body section#modulo1 .conteudo .todo-container .todo-list .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
